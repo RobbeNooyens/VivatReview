@@ -1,0 +1,171 @@
+# Review:
+# =======
+plot_not_reviewed:
+  - "&7[&eREVIEW&7] &7This plot hasn't been reviewed yet."
+plot_submitted:
+  - '&7[&eREVIEW&7] &aCongrats! &7Your plot has been succesfully submitted!'
+cancelled_submit:
+  - '&7[&eREVIEW&7] &cWarning: &7Submit has been cancelled!'
+not_on_plot:
+  - '&7[&eREVIEW&7] &cWarning: &7You should be on a plot!'
+staff_reviewed_plot:
+  - '&7[&eREVIEW&7] &7Your review has been sent!'
+confirm_or_cancel_submit:
+  - "&7[&eREVIEW&7] &cWarning: &7Please choose 'confirm' or 'cancel' as parameter."
+no_pending_review:
+  - "&7[&eREVIEW&7] &cWarning: &7You don't have new reviews!"
+submit_already_has_submission:
+  - '&7[&eREVIEW&7] &cWarning: &7Your older submission should be reviewed first!'
+cant_review_own_plot:
+  - "&7[&eREVIEW&7] &cWarning: &7You can't review your own plot!"
+refreshed_cache:
+  - '&7[&cADMIN&7] Cache has been refreshed!'
+click_to_review:
+  - ' '
+  - '@json["",{"text":"[","color":"gray"},{"text":"REVIEW","color":"yellow"},{"text":"]","color":"gray"},{"text":" Click ","color":"gray"},{"text":"here","color":"aqua","clickEvent":{"action":"suggest_command","value":"/review score %ticket_id% "},"hoverEvent":{"action":"show_text","value":"&bRemember: S-Cr-Q-Co"}},{"text":" to review the plot.","color":"gray"}]'
+  - ' '
+click_to_review_ghost:
+  - ' '
+  - '@json["",{"text":"[","color":"gray"},{"text":"REVIEW","color":"yellow"},{"text":"]","color":"gray"},{"text":" Click ","color":"gray"},{"text":"here","color":"aqua","clickEvent":{"action":"suggest_command","value":"/review gscore %ticket_id% "},"hoverEvent":{"action":"show_text","value":"&bRemember: S-Cr-Q-Co"}},{"text":" to leave a ghost review.","color":"gray"}]'
+  - ' '
+review_comment_set:
+  - '&7[&eREVIEW&7] &aSuccessfully &7added a comment to this ticket.'
+new_submit_notify:
+  - '@json["",{"text":"[","color":"gray"},{"text":"REVIEW","color":"yellow"},{"text":"] New ticket available for ","color":"gray"},{"text":"%player%","color":"aqua"},{"text":"!","color":"gray"},{"text":" "},{"text":"[","color":"dark_gray","clickEvent":{"action":"run_command","value":"/review list"}},{"text":"OPEN","color":"green","clickEvent":{"action":"run_command","value":"/review list"}},{"text":"]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/review list"}}]'
+new_submit_while_offline:
+  - '@json["",{"text":"[","color":"gray"},{"text":"REVIEW","color":"yellow"},{"text":"] There are ","color":"gray"},{"text":"%amount%","color":"aqua"},{"text":" tickets waiting for your review! ","color":"gray"},{"text":"[","color":"dark_gray","clickEvent":{"action":"run_command","value":"/review list"}},{"text":"OPEN","color":"green","clickEvent":{"action":"run_command","value":"/review list"}},{"text":"]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/review list"}}]'
+confirm_ghost:
+  - '@json["",{"text":"[","color":"gray"},{"text":"REVIEW","color":"yellow"},{"text":"] Do you agree with ","color":"gray"},{"text":"%score%","color":"aqua"},{"text":"? ","color":"gray"},{"text":"[","color":"dark_gray","clickEvent":{"action":"run_command","value":"/review ghost %id% %staff% %score%"}},{"text":"YES","color":"green","clickEvent":{"action":"run_command","value":"/review ghost %id% %staff% %score%"}},{"text":"]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/review ghost %id% %staff% %score%"}},{"text":" ","color":"dark_gray"},{"text":"[","color":"dark_gray","clickEvent":{"action":"suggest_command","value":"/review score %id% "}},{"text":"NO","color":"red","clickEvent":{"action":"suggest_command","value":"/review score %id%"}},{"text":"]","color":"dark_gray","clickEvent":{"action":"suggest_command","value":"/review score %id%"}}]'
+not_plotowner:
+  - "&7[&eREVIEW&7] &cWarning: &7You aren't the owner of this plot!"
+reached_submission_limit:
+  - '&7[&eREVIEW&7] &cWarning: &7This plot reached the maximum resubmission limit.'
+player_ranked_up:
+  - '&7[&eREVIEW&7] &b%player% &7ranked up to %rank%&7!'
+resubmission_notification:
+  - '&7[&eREVIEW&7] Resubmission of &b#%id% &7(%staff% rated %score%&7)'
+player_ranked_up_offline:
+  - '&7[&eREVIEW&7] &aCongratulations! &7You ranked up to %rank%&7!'
+review_info:
+  - ' '
+  - '&8&m-------------------&7[ &6&lReview Info &7]&8&m--------------------'
+  - ' '
+  - '  &7Review #%ticket_id% &7by %rank% &b%reviewee_name%'
+  - '  &7Created on %date% in %world% &7on plot %plot_id%.'
+  - '  &7State: &f%state%'
+  - '  &7Reviewed by &f%staff_name%'
+  - ' '
+  - '&8&m-----------------------------------------------------'
+ranked_up:
+  - ' '
+  - '&8&m---------------&7[ &6&lYou ranked up! &7]&8&m----------------'
+  - ' '
+  - '&eCongratulations! Your new rank is %new_rank%&e!'
+  - ' '
+  - '&8&m-----------------------------------------------------'
+submit_countdown:
+  - '&7[&eREVIEW&7] &7Time left: &b%hours%h%minutes%'
+review_summary_accepted:
+  - ' '
+  - '&8&m-----------------&7[ &6&lReview Summary &7]&8&m------------------'
+  - ' '
+  - '                 &7Congratulations! Your plot &aPASSED&7!'
+  - ' '
+  - '@json["",{"text":" \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020[","color":"gray"},{"text":"COMMENT","color":"aqua","clickEvent":{"action":"run_command","value":"/review comment %id%"},"hoverEvent":{"action":"show_text","value":"Click to reveal comment"}},{"text":"]","color":"gray"}]'
+  - ' '
+  - '               &7You can claim a new plot with /plot auto.'
+  - ' '
+  - '&8&m-----------------------------------------------------'
+review_summary_denied:
+  - ' '
+  - '&8&m-----------------&7[ &6&lReview Summary &7]&8&m------------------'
+  - ' '
+  - '                          &7Your plot was &cDENIED&7.'
+  - ' '
+  - '@json["",{"text":" \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020[","color":"gray"},{"text":"COMMENT","color":"aqua","clickEvent":{"action":"run_command","value":"/review comment %id%"},"hoverEvent":{"action":"show_text","value":"Click to reveal comment"}},{"text":"]","color":"gray"}]'
+  - ' '
+  - '  &7Please read the comment to see what you can improve.'
+  - '  &7You can resubmit this plot once you have improved it.'
+  - ' '
+  - '&8&m-----------------------------------------------------'
+online_reviewed:
+  - ' '
+  - '&8&m-----------------&7[ &6&lReview Finished &7]&8&m------------------'
+  - ' '
+  - '  &7%staff_name% has reviewed your plot!'
+  - '  &7Use &b/review summary &7to see the results!'
+  - ' '
+  - '&8&m-----------------------------------------------------'
+online_ghost_reviewed:
+  - ' '
+  - '&8&m-----------------&7[ &6&lGhost Review &7]&8&m------------------'
+  - ' '
+  - '  &7%staff_name% &7has left a ghost review on your submission!'
+  - '  &7You scored &b%score%.'
+  - ' '
+  - "  &cNote! &7This is not final, and will not count until it's checked by higher staff!"
+  - ' '
+  - '&8&m-----------------------------------------------------'
+offline_reviewed:
+  - ' '
+  - '&8&m-----------------&7[ &6&lReview Finished &7]&8&m-----------------'
+  - ' '
+  - '  &6Your plot has been reviewed by %staff% &6while you were offline!'
+  - '  &7Use &b/review summary &7to see the results!'
+  - ' '
+  - '&8&m-----------------------------------------------------'
+review_credits:
+  - ' '
+  - '&8&m-----------------------------------------------------'
+  - ' '
+  - '&6VivatReview Info:'
+  - '&cDevelopers: &eRobnoo, Mirass'
+  - '&cVersion: &e%plugin_version%'
+  - '&cDescription: &eCustomized plot review plugin.'
+  - ' '
+  - '&8&m-----------------------------------------------------'
+review_help:
+  - '&8&m-----------------------------------------------------'
+  - ' '
+  - '&6VivatReview Help:'
+  - "&c/submit (confirm/cancel): &eSubmit the plot you're standing on"
+  - '&c/review info <id>: &eGet information about a review'
+  - '&c/review history: &eOpen a Gui with your past reviews'
+  - '&c/review credits: &eDisplay information about this plugin '
+  - '&c/review help: &eShow this page'
+  - ' '
+  - '&8&m-----------------------------------------------------'
+submit_plot:
+  - ' '
+  - '&8&m-------------------&7[ &6&lPlot Submit &7]&8&m--------------------'
+  - ' '
+  - '&c[!] &7You are about to submit a plot for review. If it is denied, a staffmember will leave a comment for you.'
+  - ' '
+  - '&6&lRULES:'
+  - '&c[1] &7It must be a completed, 100% original build.'
+  - '&c[2] &7No pixel art, parkour, or redstone based builds.'
+  - ' '
+  - '&6&lPLEASE NOTE:'
+  - "&c[1] &7Please read /help judging if you are unfamiliar with the scoring system."
+  - '&c[2] &7If the plot does not pass, you can resubmit with improvements.'
+  - '  '
+  - '@json["",{"text":"Are you sure you want to submit your plot? ","color":"yellow"},{"text":"[","color":"dark_gray","clickEvent":{"action":"run_command","value":"/submit confirm"},"hoverEvent":{"action":"show_text","value":"&aClick to confirm"}},{"text":"YES","color":"green","clickEvent":{"action":"run_command","value":"/submit confirm"},"hoverEvent":{"action":"show_text","value":"&aClick to confirm"}},{"text":"]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/submit confirm"},"hoverEvent":{"action":"show_text","value":"&aClick to confirm"}},{"text":" ","color":"yellow"},{"text":"[","color":"dark_gray","clickEvent":{"action":"run_command","value":"/submit cancel"},"hoverEvent":{"action":"show_text","value":"&cClick to cancel"}},{"text":"NO","color":"red","clickEvent":{"action":"run_command","value":"/submit cancel"},"hoverEvent":{"action":"show_text","value":"&cClick to cancel"}},{"text":"]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/submit cancel"},"hoverEvent":{"action":"show_text","value":"&cClick to cancel"}}]'
+  - ' '
+  - '&8&m-----------------------------------------------------'
+review_comment:
+  - ' '
+  - '&7[ &fSkill &7]'
+  - '&7 %skill%'
+  - '&7[ &fCreativity &7]'
+  - '&7 %creativity%'
+  - '&7[ &fQuality &7]'
+  - '&7 %quality%'
+  - '&7[ &fComposition &7]'
+  - '&7 %composition%'
+review_edit_comment:
+  - '&8&m-----------------------------------------------------'
+  - '@json["",{"text":"[","color":"gray","clickEvent":{"action":"suggest_command","value":"/review comment %id% skill"},"hoverEvent":{"action":"show_text","value":"Edit Skill comment"}},{"text":"EDIT","color":"aqua","clickEvent":{"action":"suggest_command","value":"/review comment %id% skill %skill%"},"hoverEvent":{"action":"show_text","value":"Edit Skill comment"}},{"text":"]","color":"gray","clickEvent":{"action":"suggest_command","value":"/review comment %id% skill"},"hoverEvent":{"action":"show_text","value":"Edit Skill comment"}},{"text":" Skill: "},{"text":"%skill%","color":"gray"}]'
+  - '@json["",{"text":"[","color":"gray","clickEvent":{"action":"suggest_command","value":"/review comment %id% creativity"},"hoverEvent":{"action":"show_text","value":"Edit Creativity comment"}},{"text":"EDIT","color":"aqua","clickEvent":{"action":"suggest_command","value":"/review comment %id% creativity %creativity%"},"hoverEvent":{"action":"show_text","value":"Edit Creativity comment"}},{"text":"]","color":"gray","clickEvent":{"action":"suggest_command","value":"/review comment %id% creativity"},"hoverEvent":{"action":"show_text","value":"Edit Creativity comment"}},{"text":" Creativity: "},{"text":"%creativity%","color":"gray"}]'
+  - '@json["",{"text":"[","color":"gray","clickEvent":{"action":"suggest_command","value":"/review comment %id% quality"},"hoverEvent":{"action":"show_text","value":"Edit Quality comment"}},{"text":"EDIT","color":"aqua","clickEvent":{"action":"suggest_command","value":"/review comment %id% quality %quality%"},"hoverEvent":{"action":"show_text","value":"Edit Quality comment"}},{"text":"]","color":"gray","clickEvent":{"action":"suggest_command","value":"/review comment %id% quality"},"hoverEvent":{"action":"show_text","value":"Edit Quality comment"}},{"text":" Quality: "},{"text":"%quality%","color":"gray"}]'
+  - '@json["",{"text":"[","color":"gray","clickEvent":{"action":"suggest_command","value":"/review comment %id% composition"},"hoverEvent":{"action":"show_text","value":"Edit Composition comment"}},{"text":"EDIT","color":"aqua","clickEvent":{"action":"suggest_command","value":"/review comment %id% composition %composition%"},"hoverEvent":{"action":"show_text","value":"Edit Composition comment"}},{"text":"]","color":"gray","clickEvent":{"action":"suggest_command","value":"/review comment %id% composition"},"hoverEvent":{"action":"show_text","value":"Edit Composition comment"}},{"text":" Composition: "},{"text":"%composition%","color":"gray"}]'
+  - '&8&m-----------------------------------------------------'

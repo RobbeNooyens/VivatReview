@@ -1,0 +1,14 @@
+name: VivatReview
+version: '2.0.0'
+description: Review plots
+author: Robnoo02
+main: net.vivatcreative.review.VivatReview
+depend: [PlotSquared, VivatCore]
+
+commands:
+  review:
+    usage: /<command>
+    description: Review cmd
+  submit:
+    usage: /<command>
+    description: Submit your plot
